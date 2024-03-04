@@ -1,0 +1,23 @@
+-------------------------------------------------
+-- DT'S NEOVIM CONFIGURATION
+-- Neovim website: https://neovim.io/
+-- DT's dotfiles: https://gitlab.com/dwt1/dotfiles
+-------------------------------------------------
+
+local status, orgmode = pcall(require, "orgmode")
+if not status then
+	return
+end
+
+require('orgmode').setup({
+	org_agenda_files = { "/media/sf_kDrive2/Org/agenda.org" },
+	org_default_notes_file = "/media/sf_kDrive2/Org/notes.org",
+	org_todo_keywords = {'TODO', 'WAITING', '|', 'DONE', 'DELEGATED'},
+	org_todo_keyword_faces = {
+    		WAITING = ':foreground blue :weight bold',
+    		DELEGATED = ':background #FFFFFF :slant italic :underline on',
+    		TODO = ':background #000000 :foreground red', -- overrides builtin color for `TODO` keyword
+  }
+})
+
+orgmode.setup_ts_grammar()

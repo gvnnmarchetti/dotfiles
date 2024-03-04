@@ -1,0 +1,124 @@
+-------------------------------------------------
+-- DT'S NEOVIM CONFIGURATION
+-- Neovim website: https://neovim.io/
+-- DT's dotfiles: https://gitlab.com/dwt1/dotfiles
+-------------------------------------------------
+
+local status, packer = pcall(require, "packer")
+if not status then
+    print("Packer is not installed")
+    return
+end
+
+-- Reloads Neovim after whenever you save plugins.lua
+vim.cmd([[
+augroup packer_user_config
+autocmd!
+autocmd BufWritePost plugins.lua source <afile> | PackerSync
+augroup END
+]])
+
+packer.startup(function(use)
+    -- Packer can manage itself
+    use("wbthomason/packer.nvim")
+
+    -- Dashboard is a nice start screen for nvim
+    --	use({"nvimdev/dashboard-nvim",
+    --      event = 'VimEnter'})
+
+--    use({'glepnir/dbsession.nvim', cmd = {'SessionSave', 'SessionLoad'},
+--    config = function() require('dbsession').setup({}) end})
+
+    -- Telescope
+    use({
+        "nvim-telescope/telescope.nvim",
+        tag = "0.1.5",
+        requires = { { "nvim-lua/plenary.nvim" } },
+    })
+    use("nvim-telescope/telescope-file-browser.nvim")
+    use("joaomsa/telescope-orgmode.nvim")
+
+    use("nvim-treesitter/nvim-treesitter") -- Treesitter Syntax Highlighting
+
+    -- Productivity
+--    use("vimwiki/vimwiki")
+---    use("jreybert/vimagit")
+    use("nvim-orgmode/orgmode")
+    use {'akinsho/org-bullets.nvim', config = function()
+        require('org-bullets').setup()
+        require('telescope').load_extension('orgmode')
+    end}
+
+    use("folke/which-key.nvim") -- Which Key
+
+    -- Lua line
+    use {'nvim-lualine/lualine.nvim',
+    requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+}
+
+-- File management --
+--use("vifm/vifm.vim")   
+use("scrooloose/nerdtree")
+use("tiagofumo/vim-nerdtree-syntax-highlight")
+use("ryanoasis/vim-devicons")
+
+-- Tim Pope Plugins --
+use("tpope/vim-surround")
+
+-- Syntax Highlighting and Colors --
+--use("PotatoesMaster/i3-vim-syntax")
+-- use("kovetskiy/sxhkd-vim")
+use("vim-python/python-syntax")
+use("ap/vim-css-color")
+--use("nickeb96/fish.vim")
+
+-- Junegunn Choi Plugins --
+-- use("junegunn/goyo.vim")
+use("junegunn/limelight.vim")
+use("junegunn/vim-emoji")
+
+-- Colorschemes --
+use("RRethy/nvim-base16")
+use("kyazdani42/nvim-palenight.lua")
+
+-- Other stuff --
+use("frazrepo/vim-rainbow")
+
+use {
+    "nvim-neorg/neorg",
+    config = function()
+        require('neorg').setup {
+            load = {
+                ["core.defaults"] = {}, -- Loads default behaviour
+                ["core.concealer"] = {
+                    config ={
+                        icon_preset = "diamond"
+                    },
+                }, -- Adds pretty icons to your documents
+                ["core.integrations.telescope"] = {
+                		},
+                ["core.dirman"] = { -- Manages Neorg workspaces
+                    config = {
+                        workspaces = {
+                            notes = "~/kDrive/Neorg/notes",
+                            main =  "~/kDrive/Neorg/main",
+                        },
+                        default_workspace = "notes",
+                    },
+                },
+            },
+        }
+    end,
+    run = ":Neorg sync-parsers",
+    requires = { " nvim-lua/plenary.nvim", "nvim-neorg/neorg-telescope"},
+}
+if packer_bootstrap then
+    packer.sync()
+end
+end)
+
+
+
+vim.g.vimwiki_list = {
+    { path = '/media/sf_kDrive2/Wiki', syntax = 'markdown', ext = '.md' }
+}
