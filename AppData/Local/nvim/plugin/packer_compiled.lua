@@ -101,6 +101,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\user\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\fish.vim",
     url = "https://github.com/nickeb96/fish.vim"
   },
+  ["git-worktree.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\user\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\git-worktree.nvim",
+    url = "https://github.com/ThePrimeagen/git-worktree.nvim"
+  },
   ["gitsigns.nvim"] = {
     loaded = true,
     path = "C:\\Users\\user\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\gitsigns.nvim",
@@ -134,7 +139,7 @@ _G.packer_plugins = {
     url = "https://github.com/iamcco/markdown-preview.nvim"
   },
   neorg = {
-    config = { "\27LJ\2\n�\a\0\0\t\0005\0I6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\0023\0005\3\3\0004\4\0\0=\4\4\0035\4\22\0005\5\5\0005\6\t\0005\a\a\0005\b\6\0=\b\b\a=\a\n\6=\6\b\0055\6\r\0005\a\f\0005\b\v\0=\b\b\a=\a\14\6=\6\b\0055\6\20\0005\a\16\0005\b\15\0=\b\17\a5\b\18\0=\b\19\a=\a\21\6=\6\b\5=\5\23\4=\4\24\0034\4\0\0=\4\25\0035\4\29\0005\5\27\0005\6\26\0=\6\28\5=\5\23\4=\4\30\0035\4 \0005\5\31\0=\5\23\4=\4!\0034\4\0\0=\4\"\0034\4\0\0=\4#\0034\4\0\0=\4$\0035\4&\0005\5%\0=\5\23\4=\4'\0034\4\0\0=\4(\0035\4*\0005\5)\0=\5\23\4=\4+\0034\4\0\0=\4,\0035\4.\0005\5-\0=\5\23\4=\4/\0035\0041\0005\0050\0=\5\23\4=\0042\3=\0034\2B\0\2\1K\0\1\0\tload\1\0\0\17core.journal\1\0\0\1\0\2\14workspace\nNotes\rstrategy\tflat\16core.tangle\1\0\0\1\0\1\20report_on_empty\1\17core.summary\25core.export.markdown\1\0\0\1\0\1\15extensions\ball\16core.export\19core.presenter\1\0\0\1\0\1\rzen_mode\rzen-mode\23core.looking-glass\24core.qol.todo_items\17core.qol.toc\27core.esupports.metagen\1\0\0\1\0\2\ttype\tauto\16update_date\2\16core.dirman\1\0\0\15workspaces\1\0\1\22default_workspace\nnotes\1\0\2\tmain\25~\\kDrive2\\Neorg\\main\nnotes\26~\\kDrive2\\Neorg\\notes core.integrations.telescope\19core.concealer\vconfig\1\0\0\ttodo\1\0\0\tdone\1\0\1\ticon\b✓\14cancelled\1\0\0\1\0\1\ticon\b✗\fordered\1\0\0\1\0\0\1\a\0\0\0061\6A\6a\0061\6A\6a\fheading\1\0\0\nicons\1\0\0\1\b\0\0\b◉\b◎\b▶\b○\a»\a­\a°\1\0\3\20init_open_folds\tauto\16icon_preset\nbasic\nfolds\2\18core.defaults\1\0\0\nsetup\nneorg\frequire\0" },
+    config = { "\27LJ\2\n�\a\0\0\t\0005\0I6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\0023\0005\3\3\0004\4\0\0=\4\4\0035\4\22\0005\5\5\0005\6\t\0005\a\a\0005\b\6\0=\b\b\a=\a\n\6=\6\b\0055\6\r\0005\a\f\0005\b\v\0=\b\b\a=\a\14\6=\6\b\0055\6\20\0005\a\16\0005\b\15\0=\b\17\a5\b\18\0=\b\19\a=\a\21\6=\6\b\5=\5\23\4=\4\24\0034\4\0\0=\4\25\0035\4\29\0005\5\27\0005\6\26\0=\6\28\5=\5\23\4=\4\30\0035\4 \0005\5\31\0=\5\23\4=\4!\0034\4\0\0=\4\"\0034\4\0\0=\4#\0034\4\0\0=\4$\0035\4&\0005\5%\0=\5\23\4=\4'\0034\4\0\0=\4(\0035\4*\0005\5)\0=\5\23\4=\4+\0034\4\0\0=\4,\0035\4.\0005\5-\0=\5\23\4=\4/\0035\0041\0005\0050\0=\5\23\4=\0042\3=\0034\2B\0\2\1K\0\1\0\tload\1\0\0\17core.journal\1\0\0\1\0\2\rstrategy\tflat\14workspace\nNotes\16core.tangle\1\0\0\1\0\1\20report_on_empty\1\17core.summary\25core.export.markdown\1\0\0\1\0\1\15extensions\ball\16core.export\19core.presenter\1\0\0\1\0\1\rzen_mode\rzen-mode\23core.looking-glass\24core.qol.todo_items\17core.qol.toc\27core.esupports.metagen\1\0\0\1\0\2\ttype\tauto\16update_date\2\16core.dirman\1\0\0\15workspaces\1\0\1\22default_workspace\nnotes\1\0\2\nnotes\26~\\kDrive2\\Neorg\\notes\tmain\25~\\kDrive2\\Neorg\\main core.integrations.telescope\19core.concealer\vconfig\1\0\0\ttodo\1\0\0\tdone\1\0\1\ticon\b✓\14cancelled\1\0\0\1\0\1\ticon\b✗\fordered\1\0\0\1\0\0\1\a\0\0\0061\6A\6a\0061\6A\6a\fheading\1\0\0\nicons\1\0\0\1\b\0\0\b◉\b◎\b▶\b○\a»\a­\a°\1\0\3\20init_open_folds\tauto\16icon_preset\nbasic\nfolds\2\18core.defaults\1\0\0\nsetup\nneorg\frequire\0" },
     loaded = true,
     path = "C:\\Users\\user\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\neorg",
     url = "https://github.com/nvim-neorg/neorg"
@@ -163,6 +168,13 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\user\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
+  ["nvim-treesitter-textobjects"] = {
+    load_after = {},
+    loaded = true,
+    needs_bufread = false,
+    path = "C:\\Users\\user\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\nvim-treesitter-textobjects",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter-textobjects"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
@@ -282,17 +294,29 @@ time([[Defining packer_plugins]], false)
 time([[Setup for markdown-preview.nvim]], true)
 try_loadstring("\27LJ\2\n=\0\0\2\0\4\0\0056\0\0\0009\0\1\0005\1\3\0=\1\2\0K\0\1\0\1\2\0\0\rmarkdown\19mkdp_filetypes\6g\bvim\0", "setup", "markdown-preview.nvim")
 time([[Setup for markdown-preview.nvim]], false)
--- Config for: neorg
-time([[Config for neorg]], true)
-try_loadstring("\27LJ\2\n�\a\0\0\t\0005\0I6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\0023\0005\3\3\0004\4\0\0=\4\4\0035\4\22\0005\5\5\0005\6\t\0005\a\a\0005\b\6\0=\b\b\a=\a\n\6=\6\b\0055\6\r\0005\a\f\0005\b\v\0=\b\b\a=\a\14\6=\6\b\0055\6\20\0005\a\16\0005\b\15\0=\b\17\a5\b\18\0=\b\19\a=\a\21\6=\6\b\5=\5\23\4=\4\24\0034\4\0\0=\4\25\0035\4\29\0005\5\27\0005\6\26\0=\6\28\5=\5\23\4=\4\30\0035\4 \0005\5\31\0=\5\23\4=\4!\0034\4\0\0=\4\"\0034\4\0\0=\4#\0034\4\0\0=\4$\0035\4&\0005\5%\0=\5\23\4=\4'\0034\4\0\0=\4(\0035\4*\0005\5)\0=\5\23\4=\4+\0034\4\0\0=\4,\0035\4.\0005\5-\0=\5\23\4=\4/\0035\0041\0005\0050\0=\5\23\4=\0042\3=\0034\2B\0\2\1K\0\1\0\tload\1\0\0\17core.journal\1\0\0\1\0\2\14workspace\nNotes\rstrategy\tflat\16core.tangle\1\0\0\1\0\1\20report_on_empty\1\17core.summary\25core.export.markdown\1\0\0\1\0\1\15extensions\ball\16core.export\19core.presenter\1\0\0\1\0\1\rzen_mode\rzen-mode\23core.looking-glass\24core.qol.todo_items\17core.qol.toc\27core.esupports.metagen\1\0\0\1\0\2\ttype\tauto\16update_date\2\16core.dirman\1\0\0\15workspaces\1\0\1\22default_workspace\nnotes\1\0\2\tmain\25~\\kDrive2\\Neorg\\main\nnotes\26~\\kDrive2\\Neorg\\notes core.integrations.telescope\19core.concealer\vconfig\1\0\0\ttodo\1\0\0\tdone\1\0\1\ticon\b✓\14cancelled\1\0\0\1\0\1\ticon\b✗\fordered\1\0\0\1\0\0\1\a\0\0\0061\6A\6a\0061\6A\6a\fheading\1\0\0\nicons\1\0\0\1\b\0\0\b◉\b◎\b▶\b○\a»\a­\a°\1\0\3\20init_open_folds\tauto\16icon_preset\nbasic\nfolds\2\18core.defaults\1\0\0\nsetup\nneorg\frequire\0", "config", "neorg")
-time([[Config for neorg]], false)
 -- Config for: rose-pine
 time([[Config for rose-pine]], true)
 try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\26colorscheme rose-pine\bcmd\bvim\0", "config", "rose-pine")
 time([[Config for rose-pine]], false)
+-- Config for: neorg
+time([[Config for neorg]], true)
+try_loadstring("\27LJ\2\n�\a\0\0\t\0005\0I6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\0023\0005\3\3\0004\4\0\0=\4\4\0035\4\22\0005\5\5\0005\6\t\0005\a\a\0005\b\6\0=\b\b\a=\a\n\6=\6\b\0055\6\r\0005\a\f\0005\b\v\0=\b\b\a=\a\14\6=\6\b\0055\6\20\0005\a\16\0005\b\15\0=\b\17\a5\b\18\0=\b\19\a=\a\21\6=\6\b\5=\5\23\4=\4\24\0034\4\0\0=\4\25\0035\4\29\0005\5\27\0005\6\26\0=\6\28\5=\5\23\4=\4\30\0035\4 \0005\5\31\0=\5\23\4=\4!\0034\4\0\0=\4\"\0034\4\0\0=\4#\0034\4\0\0=\4$\0035\4&\0005\5%\0=\5\23\4=\4'\0034\4\0\0=\4(\0035\4*\0005\5)\0=\5\23\4=\4+\0034\4\0\0=\4,\0035\4.\0005\5-\0=\5\23\4=\4/\0035\0041\0005\0050\0=\5\23\4=\0042\3=\0034\2B\0\2\1K\0\1\0\tload\1\0\0\17core.journal\1\0\0\1\0\2\rstrategy\tflat\14workspace\nNotes\16core.tangle\1\0\0\1\0\1\20report_on_empty\1\17core.summary\25core.export.markdown\1\0\0\1\0\1\15extensions\ball\16core.export\19core.presenter\1\0\0\1\0\1\rzen_mode\rzen-mode\23core.looking-glass\24core.qol.todo_items\17core.qol.toc\27core.esupports.metagen\1\0\0\1\0\2\ttype\tauto\16update_date\2\16core.dirman\1\0\0\15workspaces\1\0\1\22default_workspace\nnotes\1\0\2\nnotes\26~\\kDrive2\\Neorg\\notes\tmain\25~\\kDrive2\\Neorg\\main core.integrations.telescope\19core.concealer\vconfig\1\0\0\ttodo\1\0\0\tdone\1\0\1\ticon\b✓\14cancelled\1\0\0\1\0\1\ticon\b✗\fordered\1\0\0\1\0\0\1\a\0\0\0061\6A\6a\0061\6A\6a\fheading\1\0\0\nicons\1\0\0\1\b\0\0\b◉\b◎\b▶\b○\a»\a­\a°\1\0\3\20init_open_folds\tauto\16icon_preset\nbasic\nfolds\2\18core.defaults\1\0\0\nsetup\nneorg\frequire\0", "config", "neorg")
+time([[Config for neorg]], false)
+-- Load plugins in order defined by `after`
+time([[Sequenced loading]], true)
+vim.cmd [[ packadd nvim-treesitter ]]
+vim.cmd [[ packadd nvim-treesitter-textobjects ]]
+time([[Sequenced loading]], false)
 
 -- Command lazy-loads
 time([[Defining lazy-load commands]], true)
+pcall(vim.api.nvim_create_user_command, 'SessionLoad', function(cmdargs)
+          require('packer.load')({'dbsession.nvim'}, { cmd = 'SessionLoad', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
+        end,
+        {nargs = '*', range = true, bang = true, complete = function()
+          require('packer.load')({'dbsession.nvim'}, {}, _G.packer_plugins)
+          return vim.fn.getcompletion('SessionLoad ', 'cmdline')
+      end})
 pcall(vim.api.nvim_create_user_command, 'SessionSave', function(cmdargs)
           require('packer.load')({'dbsession.nvim'}, { cmd = 'SessionSave', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
         end,
@@ -306,13 +330,6 @@ pcall(vim.api.nvim_create_user_command, 'SessionDelete', function(cmdargs)
         {nargs = '*', range = true, bang = true, complete = function()
           require('packer.load')({'dbsession.nvim'}, {}, _G.packer_plugins)
           return vim.fn.getcompletion('SessionDelete ', 'cmdline')
-      end})
-pcall(vim.api.nvim_create_user_command, 'SessionLoad', function(cmdargs)
-          require('packer.load')({'dbsession.nvim'}, { cmd = 'SessionLoad', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
-        end,
-        {nargs = '*', range = true, bang = true, complete = function()
-          require('packer.load')({'dbsession.nvim'}, {}, _G.packer_plugins)
-          return vim.fn.getcompletion('SessionLoad ', 'cmdline')
       end})
 time([[Defining lazy-load commands]], false)
 

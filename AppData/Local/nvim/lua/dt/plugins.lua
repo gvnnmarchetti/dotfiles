@@ -39,6 +39,9 @@ use {
   requires = {'nvim-tree/nvim-web-devicons'}
 }
 
+use {
+  'ThePrimeagen/git-worktree.nvim'
+}
 
 --	use({"nvimdev/dashboard-nvim",
 --      event = 'VimEnter'})
@@ -63,6 +66,9 @@ use({
 use({
   "nvim-telescope/telescope.nvim",
   tag = "0.1.5",
+  defaults = {
+  path_display= {"absolute"},
+},
   requires = { { "nvim-lua/plenary.nvim" } },
 })
 use("nvim-telescope/telescope-file-browser.nvim")
@@ -75,6 +81,12 @@ use {
   'renerocksai/telekasten.nvim',
   requires = {'nvim-telescope/telescope.nvim'}
 }
+
+use({
+  "nvim-treesitter/nvim-treesitter-textobjects",
+  after = "nvim-treesitter",
+  requires = "nvim-treesitter/nvim-treesitter",
+})
 
 use("nvim-telescope/telescope-symbols.nvim")
 
